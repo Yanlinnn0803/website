@@ -1,0 +1,662 @@
+body{
+    margin: 0;
+    padding: 0;
+    border:none;
+    background-color: gainsboro;
+    font-family: "cwTeXYen", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*菜單*/
+
+    /*菜單右方*/
+
+#meau{
+    width:100%;
+}
+
+ul.meau_area {
+    list-style-type: none;
+
+    margin: 20px 20px 20px 20px;
+    padding: 0;
+    
+    overflow: hidden;
+    
+    background-color: #333;
+    
+    border-radius: 10px;
+}
+
+li.logo{
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    
+    font-size: 22px;
+    font-weight:bolder;
+    margin-left: 1%;
+    padding: 50px 20px 50px 20px;
+}
+
+li.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    float: left;
+    font-size: 22px;
+}
+  
+a.meau_choice , a.drop_choice {
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    margin-top: 0;
+    margin-bottom:0;
+    padding: 50px 30px 54px 30px;
+}
+  
+li > a.meau_choice:hover {
+    background-color: red;
+}
+
+li.dropdown > a.drop_choice:hover{
+    background-color: red;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+div.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+div.dropdown_content > a {
+    color: black;
+    padding: 20px 20px;
+    
+    font-size:15px;
+    text-align: center;
+    text-decoration: none;
+    
+    display: block;
+}
+  
+div.dropdown_content > a:hover {
+    background-color: #f1f1f1;
+}
+  
+li.dropdown:hover > div.dropdown_content {
+    display: block;
+}
+
+    /*菜單右方*/
+
+div.meau_right{
+    float: right;
+
+    margin-right: 2%;
+}
+
+a.meau_choice2{ 
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    
+    padding: 50px 30px 50px 30px;
+}
+
+a.meau_choice3{
+    display: inline-block;
+
+    padding: 50px 30px 30px 30px;   
+}
+
+a.meau_choice2:hover{
+    transform: scale(1.2);
+    transition:all 0.8s ease 0s;
+}
+
+a.meau_choice3:hover{
+    transform: scale(1.2);
+    transition:all 0.8s ease 0s;    
+}
+
+img.img_cart{
+    width: 30px;
+}
+
+/*--------------------*/
+
+/*團隊宗旨*/
+
+div.purpose > h1 {
+    text-align: center;
+}
+
+div.purpose_text{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 3%; 
+}
+
+.testbtn{
+    transition: translateY 0.3s;
+ }
+ .testbtn:hover {
+   color: rgb(173, 13, 246);
+ }
+
+/*--------------------*/
+
+/*成員介紹*/
+
+
+div.member{
+    width: 100%;
+}
+
+div.member_introduce{
+    margin-left: 15%;
+    margin-right: 15%;
+
+    /*板塊置中*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+div.introduce_text{
+    width:15%;
+
+    margin-left:5%;
+    margin-right:5%;
+
+    line-height: 50px;
+    
+    text-align: center;
+}
+
+div.introduce_text > span{
+    font-size: 20px;
+}
+
+div.member_area{
+    margin-top:2%;
+}
+
+div.introduce_link{
+    width: 20%;
+}
+
+/*個人連結*/
+
+ul.align_st > li{
+    display: flex;
+}
+ul.align_st > li > h3{
+    align-self:center;
+    display: block;
+    float: right;
+    width: 50%;
+
+    text-align: center;
+}
+a.title_link{
+    text-decoration: none;
+    color: black;
+}
+ul.align_st > li > a.img_link{
+    width: 50%;
+    display:block;
+    margin-right: 20px;
+}
+img.logo{
+    max-width: 100%;
+}
+
+img.logo:hover{
+    transform: scale(1.1);
+    transition:all 0.8s ease 0s;    
+}
+
+/*點擊圖片後*/
+
+    /*吳彥霖*/
+
+#head2 {
+    width:30%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+#head2:hover {
+    opacity: 0.7;
+}
+
+#head_2{
+    width:25%
+}
+
+div.modal2 {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+
+}
+
+img.modal_content2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius:50%;
+}
+  
+
+#caption2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    margin-top:5%;
+}
+  
+
+img.modal_content2, #caption2 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {
+        transform:scale(0)
+    } 
+    to {
+        transform:scale(1)
+    }
+}
+  
+/* x */
+span.close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+span.close2:hover, span.close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+@media only screen and (max-width: 700px){
+    img.modal_content2 {
+        width: 100%;
+    }
+}
+
+    /*侯文家*/
+
+#head1 {
+    width:30%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+#head1:hover {
+    opacity: 0.7;
+}
+
+#head_1{
+    width:25%
+}
+
+div.modal1 {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+
+}
+
+img.modal_content1 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius:50%;
+}
+
+#caption1 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    margin-top:5%;
+}
+
+img.modal_content1, #caption1 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {
+        transform:scale(0)
+    } 
+    to {
+        transform:scale(1)
+    }
+}
+  
+/* x */
+span.close1 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+span.close1:hover, span.close1:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+@media only screen and (max-width: 700px){
+    img.modal_content1 {
+        width: 100%;
+    }
+}
+
+    /*李云平*/
+
+#head4 {
+    width:30%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+#head4:hover {
+    opacity: 0.7;
+}
+
+#head_4{
+    width:25%
+}
+
+div.modal4 {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+
+}
+
+img.modal_content4 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius:50%;
+}
+  
+
+#caption4 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    margin-top:5%;
+}
+  
+
+img.modal_content4, #caption4 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {
+        transform:scale(0)
+    } 
+    to {
+        transform:scale(1)
+    }
+}
+  
+/* x */
+span.close4 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+span.close4:hover, span.close4:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+@media only screen and (max-width: 700px){
+    img.modal_content4 {
+        width: 100%;
+    }
+}
+
+    /*古茂遠*/
+
+#head3 {
+    width:30%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+#head3:hover {
+    opacity: 0.7;
+}
+
+#head_3{
+    width:25%
+}
+
+div.modal3 {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+
+}
+
+img.modal_content3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius:50%;
+}
+
+#caption3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    margin-top:5%;
+}
+
+img.modal_content3, #caption3 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {
+        transform:scale(0)
+    } 
+    to {
+        transform:scale(1)
+    }
+}
+  
+/* x */
+span.close3 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+span.close3:hover, span.close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+@media only screen and (max-width: 700px){
+    img.modal_content3 {
+        width: 100%;
+    }
+}
+
+/*底部到頂點按鈕*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    
+    bottom: 2%;
+    right: 1%;
+
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+
+/*Copyright*/
+
+div.footercontainer{
+    display: flex;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+div.copyright{
+    width: 100%;
+    text-align: center;
+    margin: 100px 0 0;
+    padding: 10px 0px;
+    background-color: #3e5293;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

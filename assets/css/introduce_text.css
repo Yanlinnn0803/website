@@ -1,0 +1,427 @@
+body{
+    margin: 0;
+    padding: 0;
+    border:none;
+    background-color: gainsboro;
+    font-family: "cwTeXYen", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*菜單*/
+
+    /*菜單右方*/
+
+#meau{
+    width:100%;
+}
+
+ul.meau_area {
+    list-style-type: none;
+
+    margin: 20px 20px 20px 20px;
+    padding: 0;
+    
+    overflow: hidden;
+    
+    background-color: #333;
+    
+    border-radius: 10px;
+}
+
+li.logo{
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    
+    font-size: 22px;
+    font-weight:bolder;
+    margin-left: 1%;
+    padding: 50px 20px 50px 20px;
+}
+
+li.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    float: left;
+    font-size: 22px;
+}
+  
+a.meau_choice , a.drop_choice {
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    margin-top: 0;
+    margin-bottom:0;
+    padding: 50px 30px 54px 30px;
+}
+  
+li > a.meau_choice:hover {
+    background-color: red;
+}
+
+li.dropdown > a.drop_choice:hover{
+    background-color: red;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+div.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+div.dropdown_content > a {
+    color: black;
+    padding: 20px 20px;
+    
+    font-size:15px;
+    text-align: center;
+    text-decoration: none;
+    
+    display: block;
+}
+  
+div.dropdown_content > a:hover {
+    background-color: #f1f1f1;
+}
+  
+li.dropdown:hover > div.dropdown_content {
+    display: block;
+}
+
+    /*菜單右方*/
+
+div.meau_right{
+    float: right;
+
+    margin-right: 2%;
+}
+
+a.meau_choice2{ 
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    
+    padding: 50px 30px 50px 30px;
+}
+
+a.meau_choice3{
+    display: inline-block;
+
+    padding: 50px 30px 30px 30px;   
+}
+
+a.meau_choice2:hover{
+    transform: scale(1.2);
+    transition:all 0.8s ease 0s;
+}
+
+a.meau_choice3:hover{
+    transform: scale(1.2);
+    transition:all 0.8s ease 0s;    
+}
+
+img.img_cart{
+    width: 30px;
+}
+
+
+/*--------------------*/
+
+/*防疫網站*/
+
+div.logo1{
+    width: 50%;
+
+    margin-left:25%;
+    margin-right:25%;
+    margin-bottom: 2%;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+div.logo1 > a > img {
+    width: 100%;
+}
+
+div.logo1 > a > img:hover{
+    transform: scale(1.1);
+    transition:all 1s ease 0s;    
+}
+
+div.logo2{
+    width: 40%;
+
+    margin-left:30%;
+    margin-right:30%;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+div.logo2 > a > img {
+    width: 60%;
+    padding-left: 20%;
+    padding-right:20%;
+}
+
+div.logo2 > a > img:hover{
+    transform: scale(1.1);
+    transition:all 1s ease 0s;    
+}
+
+/*--------------------*/
+
+/*sildeshow*/
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides > img{
+    vertical-align: middle;
+    width: 600px;
+    height:500px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+/*排行榜*/
+h1.hotsell{
+    text-align: center;
+    padding-top: 20px;
+    transition: translateY 0.3s;
+}
+
+.hotsell:hover{
+    color: red;
+}
+
+.no1{
+    transition: translateY 0.3s;
+}
+.no1:hover{
+    color: rgb(255,180,66);
+}
+
+.no2{
+    transition: translateY 0.3s;
+}
+.no2:hover{
+    color: rgb(255, 255, 255);
+}
+
+.no3{
+    transition: translateY 0.3s;
+}
+.no3:hover{
+    color: rgb(186,110,64);
+}
+
+div.hot{
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    /*----------版塊置中----------*/
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+div.mask{
+    margin: 10px 10px 30px 0px;
+    padding: 10px 10px 30px 0px;
+    float: left;
+}
+
+div.mask > h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+div.mask > blockquote{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+img.img_mask{
+    width: 320px;
+}
+
+img.img_mask:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    transition:all 0.8s ease 0s;
+}
+
+
+div.alcohol{
+    float: left;
+    margin: 10px 10px 30px 30px;
+    padding: 10px 10px 30px 30px;
+}
+
+div.alcohol > h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+img.img_alcohol{
+    width:320px;
+}
+
+img.img_alcohol:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    transition:all 0.8s ease 0s;
+}
+
+div.alcohol > blockquote{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+div.bear{
+    margin: 10px 10px 30px 30px;
+    padding: 10px 10px 30px 30px;
+    float: left;
+}
+
+div.bear > h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+div.bear > blockquote{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+img.bear{
+    width: 320px;
+}
+
+img.bear:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    transition:all 0.8s ease 0s;
+}
+
+/*防疫網站*/
+
+div.logo1{
+    width: 50%;
+    margin-left:30%;
+    margin-right:30%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+div.logo1 > a > img {
+    width: 70%;
+}
+
+div.logo1 > a > img:hover{
+    transform: scale(1.1);
+    transition:all 1s ease 0s;    
+}
+
+/*--------------------*/
+
+/*Copyright*/
+
+div.footercontainer{
+    display: flex;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+div.copyright{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 0;
+    padding: 10px 0px;
+    background-color: #3e5293;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
