@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+    border:none;
+    background-color: gainsboro;
+    font-family: "cwTeXYen", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*菜單*/
+
+    /*菜單右方*/
+
+#meau{
+    width:100%;
+}
+
+ul.meau_area {
+    list-style-type: none;
+
+    margin: 20px 20px 20px 20px;
+    padding: 0;
+    
+    overflow: hidden;
+    
+    background-color: #333;
+    
+    border-radius: 10px;
+}
+
+li.logo{
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    
+    font-size: 22px;
+    font-weight:bolder;
+    margin-left: 1%;
+    padding: 50px 20px 50px 20px;
+}
+
+li {
+    float: left;
+    font-size: 20px;
+}
+
+li.logo a{
+    text-decoration: none;
+    color: white;
+}
+  
+a.meau_choice , a.drop_choice {
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    
+    padding: 50px 20px 50px 20px;
+}
+  
+li > a.meau_choice:hover {
+    background-color: red;
+}
+
+li.dropdown > a.drop_choice:hover{
+    background-color: red;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+div.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+div.dropdown_content > a {
+    color: black;
+    padding: 20px 20px;
+    
+    font-size:15px;
+    text-align: center;
+    text-decoration: none;
+    
+    display: block;
+}
+  
+div.dropdown_content > a:hover {
+    background-color: #f1f1f1;
+}
+  
+li.dropdown:hover > div.dropdown_content {
+    display: block;
+}
+
+    /*菜單右方*/
+
+div.meau_right{
+    float: right;
+
+    margin-right: 2%;
+}
+
+a.meau_choice2{ 
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    
+    padding: 50px 20px 50px 20px;
+}
+
+a.meau_choice3{
+    display: inline-block;
+
+    padding: 50px 20px 30px 20px;   
+}
+
+a.meau_choice2:hover{
+    transform: scale(1.2);
+    transition:all 0.8s ease 0s;
+}
+
+a.meau_choice3:hover{
+    transform: scale(1.2);
+    transition:all 0.8s ease 0s;    
+}
+
+img.img_cart{
+    width: 30px;
+}
+
+/*--------------------*/
+
+h1.title{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transform: scale(1,1);
+    transition: all 0.5s ease 0s;
+}
+h1.title:hover{
+    color:cadetblue;
+    transform: scale(1.2,1.2);
+}
+
+    .sell{
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .left{
+        width: 360px;
+        float:left;
+        padding-left: 15%;
+    }
+
+    img.goods{
+        width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        transform: scale(1,1);
+        transition: all 0.5s ease 0s;
+    }
+    img.goods:hover{
+        transform:scale(1.05,1.05);
+    }
+
+    .right{
+        padding-top: 10px;
+        width: auto;
+        margin-left: 360px;
+        padding-right: 20%;
+    }
+
+    .btn-group{
+        font-size: 0;
+        margin-top: 50px;
+        padding-left: 15%;
+    }
+
+    .btn{
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #3e5293;
+        width: 100px;
+        padding: 10px 0;
+        color: #fff;
+    }
+
+    .btn a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn:hover{
+        background-color: red;
+    }
+
+    .btn + .btn{
+        margin-left: 20px; 
+    }
+
+    /*copyright*/
+
+div.footercontainer{
+    display: flex;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+div.copyright{
+    width: 100%;
+    text-align: center;
+    margin: 135px 0 0;
+    padding: 10px 0px;
+    background-color: #3e5293;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

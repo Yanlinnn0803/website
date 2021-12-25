@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirusOut</title>
+
+    <style>
+        @import url("../assets/css/team_text.css");
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    </style>
+    <link rel="shortcut icon" href="../assets/img/virusouticon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <!--菜單-->
+    
+        <!--菜單左方-->
+
+    <div id="meau">
+
+        <ul class="meau_area">
+
+            <div class="meau_left">
+
+                <li class="logo"><a href="../index.html">VirusOut</a></li>
+        
+                <li><a href="team.html" class="meau_choice">關於團隊</a></li>
+            
+                <li><a href="introduce.html" class="meau_choice">商品介紹</a></li>
+            
+                <li class="dropdown">
+            
+                    <a href="" class="drop_choice">商品選購</a>
+            
+                    <div class="dropdown_content">
+                
+                        <a href="equipment.html">防疫裝備</a>
+                        <a href="disinfect.html">消毒好夥伴</a>
+                        <a href="carry.html">隨身攜帶</a>
+                        <a href="detect.html">自我檢測</a>
+                        <a href="live.html">居家防疫</a>
+                
+                    </div>
+    
+                </li>
+
+                <li><a href="question.html" class="meau_choice">常見問題</a></li>
+
+            </div>
+
+        <!--菜單右方 註冊及購物車-->
+
+            <div class="meau_right">
+
+                <li><a href="login.html" class="meau_choice2">登入 | 註冊</a></li>
+            
+                <li><a href="cart.html" class="meau_choice3"><img src="../assets/img/cart.png" class="img_cart"></a></li>
+            
+            </div>
+        
+        </ul>
+
+    </div>
+        
+    <div style="margin: 20px 0px 50px 0px">
+        
+        <div style="text-align:center">
+          
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        
+        </div>
+    
+    </div>
+
+    <!--團隊宗旨-->    
+
+    <div class="purpose">
+
+        <h1 class="testbtn">團隊宗旨</h1>
+
+        <div class="purpose_text">
+
+            <p>我們的主題為「防疫」，販賣疫情所需的日常用品</p>
+            <p>而網站名稱取名為「VirusOut－去去病毒走」。</p>
+            <p>並期許疫情早日退散，讓大家回歸原來的健康生活，且能夠脫下口罩呼吸新鮮空氣。</p>
+     
+        </div>
+
+    </div>
+
+    <!--成員介紹-->
+
+        <!--吳彥霖-->
+
+    <div class="member">
+
+        <h1 style="text-align:center;" class="testbtn">成員介紹</h1>
+
+        <div class="member_area">
+
+            <div class="member_introduce">
+
+                <img src="../assets/img/head-2.jpg" id="head2">
+
+                <!-- After click Modal -->
+                <div id="myModal2" class="modal2">
+
+                    <span class="close2">&times;</span>
+                      
+                    <img class="modal_content2" id="head_2">
+                  
+                    <div id="caption2">
+                        
+                        心得：<br>
+
+                    </div>
+                    
+                </div> 
+
+                <script>
+
+                    /*點擊進去後開啟新畫面*/
+
+                    var modal = document.getElementById("myModal2");
+                    
+                    var img = document.getElementById("head2");
+                    var modalImg = document.getElementById("head_2");
+                    var captionText = document.getElementById("caption2");
+
+                    img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                    }
+
+                    var span = document.getElementsByClassName("close2")[0];     
+
+                    span.onclick = function() { 
+                        modal.style.display = "none";
+                    }                        
+                    
+                </script>
+
+                <div class="introduce_text">
+                    
+                    <span>
+
+                        系級：資管二甲<br>
+                        姓名：吳彥霖<br>
+                        學號：10944103<br>
+                        前端負責人員
+                    
+                    </span>
+                
+                </div>
+
+                <div class="introduce_link">
+                    
+                    <!--個人連結 圖文對齊-->
+    
+                    <ul class="align_st">
+    
+                        <li>
+                            <a href="https://www.instagram.com/yanlinnn0803/" class="img_link" target="_blank"><img class="logo" src="../assets/img/ig.png"></a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100006519072093" class="img_link" target="_blank"><img class="logo" src="../assets/img/fb.png"></a>
+                        </li>
+    
+                    </ul>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="member_area">
+
+            <div class="member_introduce">
+
+                <img src="../assets/img/head-1.jpg" id="head1">
+
+                    <!-- After click Modal -->
+                <div id="myModal1" class="modal1">
+
+                    <span class="close1">&times;</span>
+                      
+                    <img class="modal_content1" id="head_1">
+                  
+                    <div id="caption1">
+                        
+                        心得：<br>
+
+                    </div>
+                    
+                </div> 
+
+                <script>
+
+                    /*點擊進去後開啟新畫面*/
+
+                    var modal = document.getElementById("myModal1");
+                    
+                    var img = document.getElementById("head1");
+                    var modalImg = document.getElementById("head_1");
+                    var captionText = document.getElementById("caption1");
+
+                    img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                    }
+
+                    var span = document.getElementsByClassName("close1")[0];     
+
+                    span.onclick = function() { 
+                        modal.style.display = "none";
+                    }                        
+                    
+                </script>
+
+                <div class="introduce_text">
+                    
+                    <span>
+
+                        系級：資管二甲<br>
+                        姓名：侯文家<br>
+                        學號：10944105<br>
+                        前端負責人員
+                    
+                    </span>
+                
+                </div>
+
+                <div class="introduce_link">
+                    
+                    <!--個人連結 圖文對齊-->
+    
+                    <ul class="align_st">
+    
+                        <li>
+                            <a href="https://www.instagram.com/home_0224_gaeun/" class="img_link" target="_blank"><img class="logo" src="../assets/img/ig.png"></a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100003004043208" class="img_link" target="_blank"><img class="logo" src="../assets/img/fb.png"></a>
+                        </li>
+    
+                    </ul>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="member_area">
+
+            <div class="member_introduce">
+
+                <img src="../assets/img/head-4.jpg" id="head4">
+
+                    <!-- After click Modal -->
+                <div id="myModal4" class="modal4">
+
+                    <span class="close4">&times;</span>
+                      
+                    <img class="modal_content4" id="head_4">
+                  
+                    <div id="caption4">
+                        
+                        心得：<br>
+
+                    </div>
+                    
+                </div> 
+
+                <script>
+
+                    /*點擊進去後開啟新畫面*/
+
+                    var modal = document.getElementById("myModal4");
+                    
+                    var img = document.getElementById("head4");
+                    var modalImg = document.getElementById("head_4");
+                    var captionText = document.getElementById("caption4");
+
+                    img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                    }
+
+                    var span = document.getElementsByClassName("close4")[0];     
+
+                    span.onclick = function() { 
+                        modal.style.display = "none";
+                    }                        
+                    
+                </script>
+
+                <div class="introduce_text">
+                    
+                    <span>
+
+                        系級：資管二乙<br>
+                        姓名：李云平<br>
+                        學號：10944232<br>
+                        後端負責人員
+                    
+                    </span>
+                
+                </div>
+
+                <div class="introduce_link">
+                    
+                    <!--個人連結 圖文對齊-->
+    
+                    <ul class="align_st">
+    
+                        <li>
+                            <a href="https://www.instagram.com/lee_yunp_knc/" class="img_link" target="_blank"><img class="logo" src="../assets/img/ig.png"></a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100011019242952" class="img_link" target="_blank"><img class="logo" src="../assets/img/fb.png"></a>
+                        </li>
+    
+                    </ul>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="member_area">
+
+            <div class="member_introduce">
+
+                <img src="../assets/img/head-3.jpg" id="head3">
+
+                    <!-- After click Modal -->
+                <div id="myModal3" class="modal3">
+
+                    <span class="close3">&times;</span>
+                      
+                    <img class="modal_content3" id="head_3">
+                  
+                    <div id="caption3">
+                        
+                        心得：<br>
+
+                    </div>
+                    
+                </div> 
+
+                <script>
+
+                    /*點擊進去後開啟新畫面*/
+
+                    var modal = document.getElementById("myModal3");
+                    
+                    var img = document.getElementById("head3");
+                    var modalImg = document.getElementById("head_3");
+                    var captionText = document.getElementById("caption3");
+
+                    img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                    }
+
+                    var span = document.getElementsByClassName("close3")[0];     
+
+                    span.onclick = function() { 
+                        modal.style.display = "none";
+                    }                        
+                    
+                </script>
+
+                <div class="introduce_text">
+                    
+                    <span>
+
+                        系級：資管二乙<br>
+                        姓名：古茂遠<br>
+                        學號：10944249<br>
+                        後端負責人員
+                    
+                    </span>
+                
+                </div>
+
+                <div class="introduce_link">
+                    
+                    <!--個人連結 圖文對齊-->
+    
+                    <ul class="align_st">
+    
+                        <li>
+                            <a href="https://www.instagram.com/2002_06_09_/?hl=zh-tw" class="img_link" target="_blank"><img class="logo" src="../assets/img/ig.png"></a>
+                        </li>
+    
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100005224807968
+                            " class="img_link" target="_blank"><img class="logo" src="../assets/img/fb.png"></a>
+                        </li>
+    
+                    </ul>
+                    
+                </div>
+
+            </div>
+
+        </div>        
+
+    </div>
+
+    <div>
+        
+        <div class="footercontainer">
+
+            <div class="copyright">
+            
+                Copyright &copy; 2021 CYIM All rights reserved.
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+
+    <!--底部到頂點按鈕-->
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        
+        var mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        
+    </script>
+
+</body>
+</html>

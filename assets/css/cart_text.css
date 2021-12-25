@@ -1,0 +1,242 @@
+body{
+    margin: 0;
+    padding: 0;
+    border:none;
+    background-color: gainsboro;
+    font-family: "cwTeXYen", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*菜單*/
+
+    /*菜單右方*/
+
+#meau{
+    width:100%;
+}
+
+ul.meau_area {
+    list-style-type: none;
+
+    margin: 20px 20px 20px 20px;
+    padding: 0;
+    
+    overflow: hidden;
+    
+    background-color: #333;
+    
+    border-radius: 10px;
+}
+
+li.logo{
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    
+    font-size: 22px;
+    font-weight:bolder;
+    margin-left: 1%;
+    padding: 50px 20px 50px 20px;
+}
+
+li {
+    float: left;
+    font-size: 20px;
+}
+  
+a.meau_choice , a.drop_choice {
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+    
+    padding: 50px 20px 50px 20px;
+}
+  
+li > a.meau_choice:hover {
+    background-color: red;
+}
+
+li.dropdown > a.drop_choice:hover{
+    background-color: red;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+div.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+div.dropdown_content > a {
+    color: black;
+    padding: 20px 20px;
+    
+    font-size:15px;
+    text-align: center;
+    text-decoration: none;
+    
+    display: block;
+}
+  
+div.dropdown_content > a:hover {
+    background-color: #f1f1f1;
+}
+  
+li.dropdown:hover > div.dropdown_content {
+    display: block;
+}
+
+/*--------------------*/
+
+/*商品*/
+h1{
+    font-size: 24px;
+}
+
+div.goods{
+    
+    width: 70%;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    margin-left: 15%;
+    margin-right: 15%;
+
+    /*板塊置中*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    background-color: lightyellow;
+    border: groove;
+    border-radius: 20px;
+}
+
+div.goods > div{
+    width: 30%;
+    margin-left:5%;
+}
+
+img.img_good1{
+    width: 240px;
+}
+
+
+div.goods2{
+    
+    width: 70%;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    /*板塊置中*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    background-color: lightyellow;
+    border: groove;
+    border-radius: 20px;
+}
+
+div.goods2 > div{
+    width: 30%;
+    margin-left:5%;
+}
+
+img.img_good2{
+    width: 240px;  
+}
+
+    /*按鈕加減*/
+
+ul,li{
+    margin:0; padding:0;
+}
+
+.counter li{
+    float:left; 
+    list-style-type:none; 
+    width:30px; height:30px; 
+    text-align:center; 
+    line-height:30px; 
+    border:#999 thin solid; 
+    background-color:gainsboro;
+}
+
+.counter li input{
+    font-size:20px; 
+    width:100%; 
+    height:100%; 
+    -webkit-appearance:none; 
+    background:none; 
+    margin:0; 
+    padding:0; 
+    border: 1px solid transparent; 
+    border-radius: 0;
+}
+
+#countnum{ 
+    border-left:hidden; 
+    border-right:hidden; 
+    color:black;
+}
+
+/*結帳*/
+
+input.end{
+    text-align:center;
+
+    width: 10%;
+    height:60px;
+    
+    font-size:20px;
+
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top:2%;
+
+    border:none;
+
+    background-color:black;
+    color:white;
+}
+
+/*--------------------*/
+
+/*Copyright*/
+
+div.footercontainer{
+    display: flex;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+div.copyright{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 0;
+    padding: 10px 0px;
+    background-color: #3e5293;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

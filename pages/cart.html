@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+
+    <style>
+        @import url('../assets/css/cart_text.css');
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    </style>
+
+    <link rel="shortcut icon" href="../assets/img/virusouticon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <!--菜單-->
+    
+        <!--菜單左方-->
+
+    <div id="meau">
+
+        <ul class="meau_area">
+    
+            <div class="meau_left">
+    
+                <li class="logo">VirusOut</li>
+            
+                <li><a href="team.html" class="meau_choice">關於團隊</a></li>
+                
+                <li><a href="introduce.html" class="meau_choice">商品介紹</a></li>
+                
+                <li class="dropdown">
+                
+                    <a href="" class="drop_choice">商品選購</a>
+                
+                    <div class="dropdown_content">
+                    
+                        <a href="equipment.html">防疫裝備</a>
+                        <a href="disinfect.html">消毒好夥伴</a>
+                        <a href="carry.html">隨身攜帶</a>
+                        <a href="detect.html">自我檢測</a>
+                        <a href="live.html">居家防疫</a>
+                    
+                    </div>
+        
+                </li>
+    
+                    <li><a href="question.html" class="meau_choice">常見問題</a></li>
+    
+            </div>
+            
+        </ul>
+    
+    </div>
+
+    <div class="goods">
+        
+        <div><img src="../assets/img/mask.png" class="img_good1"></div>
+
+        <div>
+            
+            <h1>3D立體防護口罩 100入/盒</h1>
+            
+            <h1>價格：$690</h1>
+            
+
+            <h1>數量：</h1>
+            <ul class="counter">
+                
+                <li id="minus"><input type="button" onclick="minuser()" value="-"/></li>
+                
+                <li id="countnum">1</li>
+                
+                <li id="plus"><input type="button" onclick="adder()" value="+"/></li>
+            
+            </ul>
+        
+        </div>
+
+        <script>
+
+            function adder(){
+                var count=document.getElementById("countnum").innerHTML;
+                count=parseInt(count)+1;
+                document.getElementById("countnum").innerHTML=count;
+            }
+            function minuser(){
+                var count=document.getElementById("countnum").innerHTML;
+                if(count<=1){
+                    count=1;
+                }else{
+                    count=parseInt(count)-1;
+                }	
+                document.getElementById("countnum").innerHTML=count;
+            }
+
+        </script>
+    
+    </div>
+
+    <div class="goods2">
+        
+        <div><img src="../assets/img/alcohol.png" class="img_good2"></div>
+
+        <div>
+            
+            <h1>75% 清潔用酒精液（1公升裝）</h1>
+            
+            <h1>價格：$300</h1>
+            
+
+            <h1>數量：</h1>
+            <ul class="counter">
+                
+                <li id="minus2"><input type="button" onclick="minuser2()" value="-"/></li>
+                
+                <li id="countnum2">1</li>
+                
+                <li id="plus2"><input type="button" onclick="adder2()" value="+"/></li>
+            
+            </ul>
+        
+        </div>
+
+        <script>
+
+            function adder2(){
+                var count=document.getElementById("countnum2").innerHTML;
+                count=parseInt(count)+1;
+                document.getElementById("countnum2").innerHTML=count;
+            }
+            function minuser2(){
+                var count=document.getElementById("countnum2").innerHTML;
+                if(count<=1){
+                    count=1;
+                }else{
+                    count=parseInt(count)-1;
+                }	
+                document.getElementById("countnum2").innerHTML=count;
+            }
+
+        </script>
+    
+    </div>
+
+    <input type="submit" class="end" value="結帳">
+
+    <div>
+        
+        <div class="footercontainer">
+
+            <div class="copyright">
+            
+                Copyright &copy; 2021 CYIM All rights reserved.
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+
+</body>
+</html>

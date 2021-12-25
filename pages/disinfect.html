@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消毒好夥伴</title>
+    <style>
+        @import url(../assets/css/disinfect.css);
+        @import url(../assets/css/topbutton.css);
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    </style>
+    <link rel="shortcut icon" href="../assets/img/virusouticon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--菜單-->
+    <!--菜單左方-->
+    <div id="meau">
+        <ul class="meau_area">
+            <div class="meau_left">
+                <li class="logo"><a href="../index.html">VirusOut</a></li>
+                <li><a href="team.html" class="meau_choice">關於團隊</a></li>
+                <li><a href="introduce.html" class="meau_choice">商品介紹</a></li>
+                <li class="dropdown">
+                    <a href="" class="drop_choice">商品選購</a>
+                    <div class="dropdown_content">
+                        <a href="equipment.html">防疫裝備</a>
+                        <a href="disinfect.html">消毒好夥伴</a>
+                        <a href="carry.html">隨身攜帶</a>
+                        <a href="detect.html">自我檢測</a>
+                        <a href="live.html">居家防疫</a>
+                    </div>
+                </li>
+                <li><a href="question.html" class="meau_choice">常見問題</a></li>
+            </div>
+
+        <!--菜單右方 註冊及購物車-->
+        <div class="meau_right">
+            <li><a href="login.html" class="meau_choice2">登入 | 註冊</a></li>
+            <li><a href="cart.html" class="meau_choice3"><img src="../assets/img/cart.png" class="img_cart"></a></li>
+        </div>
+        </ul>
+    </div>
+
+    <h1 class="title">消毒好夥伴</h1>
+    <div class="sell">
+        <div class="left">
+            <img src="../assets/img/alcohol.png" class="goods">
+        </div>
+        <div class="right">
+            <h1>75% 清潔用酒精液－1公升裝</h1>
+            <h2>$300</h2>
+            <select name="amount">
+                <option value="">請選擇欲購買數量</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <div class="btn-group">
+                <button class="btn"><a href="">加入購物車</a></button>
+                <button class="btn"><a href="cart.html">立即結帳</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="sell">
+        <div class="left">
+            <img src="../assets/img/disinfectant.png" class="goods">
+        </div>
+        <div class="right">
+            <h1>清潔用消毒液－1公升裝</h1>
+            <h2>$900</h2>
+            <select name="amount">
+                <option value="">請選擇欲購買數量</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <div class="btn-group">
+                <button class="btn"><a href="">加入購物車</a></button>
+                <button class="btn"><a href="cart.html">立即結帳</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        
+        <div class="footercontainer">
+
+            <div class="copyright">
+            
+                Copyright &copy; 2021 CYIM All rights reserved.
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+    <!--底部到頂點按鈕-->
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        
+        var mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirusOut-商品介紹</title>
+
+    <style>
+        @import url(../assets/css/introduce_text.css);
+        @import url(../assets/css/topbutton.css);
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    </style>
+    <link rel="shortcut icon" href="../assets/img/virusouticon.ico" type="image/x-icon">
+    
+</head>
+<body>
+
+    <!--菜單-->
+    
+        <!--菜單左方-->
+
+    <div id="meau">
+
+        <ul class="meau_area">
+
+            <div class="meau_left">
+
+                <li class="logo"><a href="../index.html">VirusOut</a></li>
+        
+                <li><a href="team.html" class="meau_choice">關於團隊</a></li>
+            
+                <li><a href="introduce.html" class="meau_choice">商品介紹</a></li>
+            
+                <li class="dropdown">
+            
+                    <a href="" class="drop_choice">商品選購</a>
+            
+                    <div class="dropdown_content">
+                
+                        <a href="equipment.html">防疫裝備</a>
+                        <a href="disinfect.html">消毒好夥伴</a>
+                        <a href="carry.html">隨身攜帶</a>
+                        <a href="detect.html">自我檢測</a>
+                        <a href="live.html">居家防疫</a>
+                
+                    </div>
+    
+                </li>
+
+                <li><a href="question.html" class="meau_choice">常見問題</a></li>
+
+            </div>
+
+        <!--菜單右方 註冊及購物車-->
+
+            <div class="meau_right">
+
+                <li><a href="login.html" class="meau_choice2">登入 | 註冊</a></li>
+            
+                <li><a href="cart.html" class="meau_choice3"><img src="../assets/img/cart.png" class="img_cart"></a></li>
+            
+            </div>
+        
+        </ul>
+
+    </div>
+
+    <!--slideshow-->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+          
+            <img src="../assets/img/mask.png" style="width:100%;">
+              
+        </div>
+        
+        <div class="mySlides">
+        
+            <img src="../assets/img/earthermometer.png" style="width:100%">
+        
+        </div>
+        
+        <div class="mySlides">
+        
+            <img src="../assets/img/alcohol.png" style="width:100%">
+        
+        </div>
+
+        <div class="mySlides">
+          
+            <img src="../assets/img/disinfectant.png" style="width:100%">
+              
+        </div>
+
+        <div class="mySlides">
+          
+            <img src="../assets/img/alcoholpads.png" style="width:100%">
+              
+        </div>
+
+        <div class="mySlides">
+          
+            <img src="../assets/img/machinead.jpg" style="width:100%">
+              
+        </div>
+        
+        <div style="text-align:center;margin-top:2%;margin-bottom:2%">
+        
+            <span class="dot"></span> 
+        
+            <span class="dot"></span> 
+        
+            <span class="dot"></span>
+            
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+
+        </div>
+
+    </div>
+
+    <!--slideshow-->
+
+    <script>
+
+        var slideIndex = 0;
+        showSlides();
+            
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); 
+        }
+            
+    </script>
+
+    <h1 class="hotsell">🔥熱銷排行榜🔥</h1>
+    <div class="hot">
+        <div class="mask">
+
+            <h1 class="no1">🥇</h1>
+            
+            <a href="equipment.html"><img src="../assets/img/mask.png" class="img_mask" title="口罩" alt=""></a>
+            
+            <blockquote style="font-size: 24px;">3D立體防護口罩</blockquote>
+
+            <blockquote style="font-size: 22px;">NT$690</blockquote>
+            
+        </div>
+
+        <div class="alcohol">
+
+            <h1 class="no2">🥈</h1>
+            
+            <a href="disinfect.html"><img src="../assets/img/alcohol.png" class="img_alcohol" title="酒精" alt=""></a>
+            
+            <blockquote style="font-size: 24px;">75% 酒精</blockquote>
+
+            <blockquote style="font-size: 22px;">NT$300</blockquote>
+        
+        </div>
+
+        <div class="bear">
+        
+            <h1 class="no3">🥉</h1>
+        
+            <a href="carry.html"><img src="../assets/img/antibacterialtowel.png" class="bear" title="抗菌巾" alt=""></a>
+        
+            <blockquote style="font-size: 24px;">酒精抗菌柔濕巾</blockquote>
+
+            <blockquote style="font-size: 22px;">NT$599</blockquote>
+        
+        </div>
+
+    </div>
+
+    <!--防疫網站-->
+
+    <h1 style="text-align:center; font-size: 36px;">衛生福利部官網</h1>
+        
+    <div class="logo1">
+
+        <a href="https://www.mohw.gov.tw/mp-1.html" target="_blank"><img src="../assets/img/logo1.png"></a>
+
+    </div>
+
+    <div>
+        
+        <div class="footercontainer">
+
+            <div class="copyright">
+            
+                Copyright &copy; 2021 CYIM All rights reserved.
+            
+            </div>
+        
+        </div>
+    
+    </div>
+        
+
+    <!--底部到頂點按鈕-->
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        
+        var mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        
+    </script>
+
+
+</body>
+</html>
