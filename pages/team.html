@@ -56,7 +56,7 @@
             <div class="meau_right">
 
                 <li><a href="login.html" class="meau_choice2">登入 | 註冊</a></li>
-            
+                <li><a href="member.html" class="meau_choice3"><img src="../assets/img/member.png" class="img_member"></a></li>
                 <li><a href="cart.html" class="meau_choice3"><img src="../assets/img/cart.png" class="img_cart"></a></li>
             
             </div>
@@ -106,7 +106,7 @@
 
             <div class="member_introduce">
 
-                <img src="../assets/img/head-2.jpg" id="head2">
+                <img src="../assets/img/head-2.jpg" alt="心得：經過這次的期末專案後，對於前端的功能也有更多的了解，但如果真的要做出完整的網站還是有一大段的路要走，在準備時間不多的情況下，架設最基本的網站真的很不容易！希望在未來能夠有機會學習到更多資源。" id="head2">
 
                 <!-- After click Modal -->
                 <div id="myModal2" class="modal2">
@@ -115,11 +115,7 @@
                       
                     <img class="modal_content2" id="head_2">
                   
-                    <div id="caption2">
-                        
-                        心得：<br>
-
-                    </div>
+                    <div id="caption2"></div>
                     
                 </div> 
 
@@ -136,6 +132,8 @@
                     img.onclick = function(){
                         modal.style.display = "block";
                         modalImg.src = this.src;
+                        captionText.innerHTML= this.alt;
+                        captionText.style.fontSize= 20+"px";
                     }
 
                     var span = document.getElementsByClassName("close2")[0];     
@@ -185,7 +183,7 @@
 
             <div class="member_introduce">
 
-                <img src="../assets/img/head-1.jpg" id="head1">
+                <img src="../assets/img/head-1.jpg" alt="心得：透過這次期末專案，發現自己還有待加強，想要架設功能完善的網站非常不容易，不僅僅要前端及後端人員共同努力及溝通，甚至還有很多從未接觸的功能，也希望未來自己能夠多加磨練" id="head1">
 
                     <!-- After click Modal -->
                 <div id="myModal1" class="modal1">
@@ -194,11 +192,7 @@
                       
                     <img class="modal_content1" id="head_1">
                   
-                    <div id="caption1">
-                        
-                        心得：<br>
-
-                    </div>
+                    <div id="caption1"></div>
                     
                 </div> 
 
@@ -215,6 +209,8 @@
                     img.onclick = function(){
                         modal.style.display = "block";
                         modalImg.src = this.src;
+                        captionText.innerHTML= this.alt;
+                        captionText.style.fontSize= 20+"px";
                     }
 
                     var span = document.getElementsByClassName("close1")[0];     
@@ -264,7 +260,7 @@
 
             <div class="member_introduce">
 
-                <img src="../assets/img/head-4.jpg" id="head4">
+                <img src="../assets/img/head-4.jpg" alt="" id="head4">
 
                     <!-- After click Modal -->
                 <div id="myModal4" class="modal4">
@@ -273,11 +269,7 @@
                       
                     <img class="modal_content4" id="head_4">
                   
-                    <div id="caption4">
-                        
-                        心得：<br>
-
-                    </div>
+                    <div id="caption4"></div>
                     
                 </div> 
 
@@ -294,6 +286,7 @@
                     img.onclick = function(){
                         modal.style.display = "block";
                         modalImg.src = this.src;
+                        captionText=this.alt;
                     }
 
                     var span = document.getElementsByClassName("close4")[0];     
@@ -343,7 +336,7 @@
 
             <div class="member_introduce">
 
-                <img src="../assets/img/head-3.jpg" id="head3">
+                <img src="../assets/img/head-3.jpg" alt="" id="head3">
 
                     <!-- After click Modal -->
                 <div id="myModal3" class="modal3">
@@ -352,11 +345,7 @@
                       
                     <img class="modal_content3" id="head_3">
                   
-                    <div id="caption3">
-                        
-                        心得：<br>
-
-                    </div>
+                    <div id="caption3"></div>
                     
                 </div> 
 
@@ -373,6 +362,8 @@
                     img.onclick = function(){
                         modal.style.display = "block";
                         modalImg.src = this.src;
+                        captionText.innerHTML= this.alt;
+                        captionText.style.fontSize= 20+"px";
                     }
 
                     var span = document.getElementsByClassName("close3")[0];     

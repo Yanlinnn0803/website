@@ -18,7 +18,7 @@ body{
 
 .login{
     width: 600px;
-    height: 500px;
+    height: 90%;
     background-color: rgba(0,0,0,.5);
     border-radius: 10px;
     border: 10px solid #fff;
@@ -68,11 +68,18 @@ body{
     background-color: #6ab4fe;
     width: 190px;
     padding: 10px 0;
-    color: #fff;
+    color: white;
+    font-family: "cwTeXYen", sans-serif;
+}
+
+.btn:hover{
+    background-color: cadetblue;
 }
 
 .form .btn a{
     text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
 
 .form .btn + .btn{

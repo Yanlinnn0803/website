@@ -67,11 +67,18 @@ body{
     background-color: #6ab4fe;
     width: 190px;
     padding: 10px 0;
-    color: #fff;
+    color: white;
+    font-family: "cwTeXYen", sans-serif;
+}
+
+.btn:hover{
+    background-color: cadetblue;
 }
 
 .form .btn a{
     text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
 
 .form .btn + .btn{

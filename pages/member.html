@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+    <style>
+        @import url(../assets/css/member.css);
+        @import url(../assets/css/topbutton.css);
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    </style>
+    <link rel="shortcut icon" href="../assets/img/virusouticon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--菜單-->
+    
+        <!--菜單左方-->
+
+        <div id="meau">
+
+            <ul class="meau_area">
+        
+                <div class="meau_left">
+        
+                    <li class="logo"><a href="../index.html">VirusOut</a></li>
+                
+                    <li><a href="team.html" class="meau_choice">關於團隊</a></li>
+                    
+                    <li><a href="introduce.html" class="meau_choice">商品介紹</a></li>
+                    
+                    <li class="dropdown">
+                    
+                        <a href="" class="drop_choice">商品選購</a>
+                    
+                        <div class="dropdown_content">
+                        
+                                <a href="equipment.html">防疫裝備</a>
+                                <a href="disinfect.html">消毒好夥伴</a>
+                                <a href="carry.html">隨身攜帶</a>
+                                <a href="detect.html">自我檢測</a>
+                                <a href="live.html">居家防疫</a>
+                        
+                        </div>
+            
+                    </li>
+        
+                    <li><a href="question.html" class="meau_choice">常見問題</a></li>
+        
+                </div>
+        
+                <!--菜單右方 註冊及購物車-->
+        
+                <div class="meau_right">
+    
+                    <li><a href="login.html" class="meau_choice2">登入 | 註冊</a></li>
+
+                    <li><a href="member.html" class="meau_choice3"><img src="../assets/img/member.png" class="img_member"></a></li>
+                
+                    <li><a href="cart.html" class="meau_choice3"><img src="../assets/img/cart.png" class="img_cart"></a></li>
+                </div>
+                
+            </ul>
+    
+        </div>
+
+        <!--表單-->
+    <div class="mform">
+        <div class="question">
+            <form class="form">
+                <h2>會員中心</h2>
+                <div class="group">
+                    <label for="user_name">姓名（暱稱）</label>
+                    <input type="text" name="" id="user_name" placeholder="請輸入姓名" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入姓名'">
+                </div>
+                <div class="group">
+                    <label for="user_id">帳號</label>
+                    <input type="text" name="" id="user_id" placeholder="請輸入帳號" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入帳號'">
+                </div>
+                <div class="group">
+                    <label for="user_password">密碼</label>
+                    <input type="password" name="" id="user_password" placeholder="請輸入密碼" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入密碼'">
+                </div>
+                <div class="group">
+                    <label for="user_textpassword">確認密碼</label>
+                    <input type="text" name="" id="user_textpassword" placeholder="請確認密碼" onfocus="this.placeholder=''" onblur="this.placeholder='請確認密碼'">
+                </div>
+                <div class="group">
+                    <label for="user_sex">性別</label>
+                    <input type="text" name="" id="user_sex" placeholder="請輸入生理性別" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入生理性別'">
+                </div>
+                <div class="group">
+                    <label for="user_birthday">生日（西元）</label>
+                    <input type="date" name="" id="user_birthday">
+                </div>
+                <div class="group">
+                    <label for="user_phone">手機</label>
+                    <input type="text" name="" id="user_phone" placeholder="格式請輸入09xx-xxx-xxx" onfocus="this.placeholder=''" onblur="this.placeholder='格式請輸入09xx-xxx-xxx'">
+                </div>
+                <div class="group">
+                    <label for="user_site">地址</label>
+                    <input type="text" name="" id="user_site" placeholder="請輸入居住地" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入居住地'">
+                </div>
+                <div class="group">
+                    <label for="user_mail">電子郵件</label>
+                    <input type="text" name="" id="user_mail" placeholder="abc@gmail.com" onfocus="this.placeholder=''" onblur="this.placeholder='abc@gmail.com'">
+                </div>
+                <div class="btn-group">
+                    <input type="submit" value="送出" class="btn" />
+                    <input type="reset" value="重設" class="btn" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        
+        <div class="footercontainer">
+
+            <div class="copyright">
+            
+                Copyright &copy; 2021 CYIM All rights reserved.
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+    <!--底部到頂點按鈕-->
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        
+        var mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        
+    </script>
+</body>
+</html>

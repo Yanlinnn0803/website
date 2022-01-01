@@ -141,6 +141,10 @@ img.img_cart{
     width: 30px;
 }
 
+img.img_member{
+    width: 25px;
+}
+
 /*--------------------*/
 
 h1.title{
@@ -186,9 +190,20 @@ h1.title:hover{
     }
 
     .right{
-        padding-top: 10px;
+        padding-top: 0px;
         width: auto;
         padding-left: 50%;
+    }
+
+    p.introduce{
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    p.amount{
+        color: red;
+        font-size: 14px;
+        font-weight: bolder;
     }
 
     .btn-group{
@@ -210,6 +225,7 @@ h1.title:hover{
     .btn a{
         text-decoration: none;
         color: white;
+        font-family: "cwTeXYen", sans-serif;
     }
     .btn:hover{
         background-color: red;

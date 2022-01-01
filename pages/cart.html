@@ -85,6 +85,9 @@
             function adder(){
                 var count=document.getElementById("countnum").innerHTML;
                 count=parseInt(count)+1;
+                if(count>=5){
+                    count=5;
+                }
                 document.getElementById("countnum").innerHTML=count;
             }
             function minuser(){
@@ -130,6 +133,9 @@
             function adder2(){
                 var count=document.getElementById("countnum2").innerHTML;
                 count=parseInt(count)+1;
+                if(count>=5){
+                    count=5;
+                }
                 document.getElementById("countnum2").innerHTML=count;
             }
             function minuser2(){
@@ -144,6 +150,44 @@
 
         </script>
     
+    </div>
+
+    <!--表單-->
+
+    <div class="mform">
+        <div class="inend">
+            <form class="form">
+                <h2>會員中心</h2>
+                <div class="group">
+                    <label for="user_name">姓名</label>
+                    <input type="text" name="" id="user_name" placeholder="請輸入姓名" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入姓名'">
+                </div>
+                <div class="group">
+                    <label for="user_phone">手機</label>
+                    <input type="text" name="" id="user_phone" placeholder="格式請輸入09xx-xxx-xxx" onfocus="this.placeholder=''" onblur="this.placeholder='格式請輸入09xx-xxx-xxx'">
+                </div>
+                <div style="display: flex;justify-content: center; align-items: center;">
+                    <div style="margin-right:20px">
+                        <label for="user_payment">付款方式</label><br>
+                        <select>
+                            <option value="貨到付款">貨到付款</option>
+                            <option value="信用卡支付">信用卡支付</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="user_site">取貨地址</label>
+                        <input type="text" style="width:295px " name="" id="user_site" placeholder="請輸入地址" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入地址'">
+                    </div>
+                </div>
+
+                <div class="group">
+                    <label for="user_mail">電子郵件</label>
+                    <input type="text" name="" id="user_mail" placeholder="abc@gmail.com" onfocus="this.placeholder=''" onblur="this.placeholder='abc@gmail.com'">
+                </div>
+
+            </form>
+        </div>
     </div>
 
     <input type="submit" class="end" value="結帳">
