@@ -103,6 +103,30 @@ li.dropdown:hover > div.dropdown_content {
     display: block;
 }
 
+
+    /*菜單右方*/
+
+div.meau_right{
+    float: right;
+    
+    margin-right: 2%;
+}
+    
+a.meau_choice2{ 
+    display: inline-block;
+    
+    color: white;
+    text-decoration: none;    
+    text-align: center;
+        
+    padding: 50px 30px 50px 30px;
+}
+
+a.meau_choice2:hover{
+    transform: scale(1.2);
+    transition:all 0.8s ease 0s;
+}
+
 /*--------------------*/
 
 /*商品*/
@@ -202,6 +226,16 @@ ul,li{
     border-left:hidden; 
     border-right:hidden; 
     color:black;
+}
+
+button.delete{
+    text-align:center;
+    font-size:20px;
+    margin-left:3px;
+    border-radius: 10px;
+    background-color:white;
+
+    border: 1px solid;
 }
 
 /*--------------------*/

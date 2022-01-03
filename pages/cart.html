@@ -9,6 +9,7 @@
     <style>
         @import url('../assets/css/cart_text.css');
         @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+        @import url("../assets/css/topbutton.css");
     </style>
 
     <link rel="shortcut icon" href="../assets/img/virusouticon.ico" type="image/x-icon">
@@ -51,6 +52,12 @@
                     <li><a href="question.html" class="meau_choice">常見問題</a></li>
     
             </div>
+
+            <div class="meau_right">
+
+                <li><a href="login.html" class="meau_choice2">登出</a></li>
+            
+            </div>
             
         </ul>
     
@@ -72,11 +79,16 @@
                 
                 <li id="minus"><input type="button" onclick="minuser()" value="-"/></li>
                 
-                <li id="countnum">1</li>
+                <li id="countnum">0</li>
                 
                 <li id="plus"><input type="button" onclick="adder()" value="+"/></li>
+                
+                <div>
+                    <button type="button" class="delete" value="">刪除</button>
+                </div>
             
             </ul>
+
         
         </div>
 
@@ -85,15 +97,12 @@
             function adder(){
                 var count=document.getElementById("countnum").innerHTML;
                 count=parseInt(count)+1;
-                if(count>=5){
-                    count=5;
-                }
                 document.getElementById("countnum").innerHTML=count;
             }
             function minuser(){
                 var count=document.getElementById("countnum").innerHTML;
-                if(count<=1){
-                    count=1;
+                if(count<=0){
+                    count=0;
                 }else{
                     count=parseInt(count)-1;
                 }	
@@ -120,10 +129,14 @@
                 
                 <li id="minus2"><input type="button" onclick="minuser2()" value="-"/></li>
                 
-                <li id="countnum2">1</li>
+                <li id="countnum2">0</li>
                 
                 <li id="plus2"><input type="button" onclick="adder2()" value="+"/></li>
-            
+
+                <div>
+                    <button type="button" class="delete" value="">刪除</button>
+                </div>
+
             </ul>
         
         </div>
@@ -133,15 +146,12 @@
             function adder2(){
                 var count=document.getElementById("countnum2").innerHTML;
                 count=parseInt(count)+1;
-                if(count>=5){
-                    count=5;
-                }
                 document.getElementById("countnum2").innerHTML=count;
             }
             function minuser2(){
                 var count=document.getElementById("countnum2").innerHTML;
-                if(count<=1){
-                    count=1;
+                if(count<=0){
+                    count=0;
                 }else{
                     count=parseInt(count)-1;
                 }	
@@ -191,6 +201,31 @@
     </div>
 
     <input type="submit" class="end" value="結帳">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        
+        var mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        
+    </script>
 
     <div>
         
