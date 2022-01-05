@@ -110,6 +110,19 @@ div.meau_right{
 
     margin-right: 2%;
 }
+#meau_s{
+    padding-top: 50px;
+}
+
+.search{
+    border:0 none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    line-height: 25px;
+	border-radius: 5px;
+	position: relative;
+	bottom: 3px;
+}
 
 a.meau_choice2{ 
     display: inline-block;
