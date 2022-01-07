@@ -118,32 +118,7 @@
                   
                     <div id="caption2"></div>
                     
-                </div> 
-
-                <script>
-
-                    /*點擊進去後開啟新畫面*/
-
-                    var modal = document.getElementById("myModal2");
-                    
-                    var img = document.getElementById("head2");
-                    var modalImg = document.getElementById("head_2");
-                    var captionText = document.getElementById("caption2");
-
-                    img.onclick = function(){
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText.innerHTML= this.alt;
-                        captionText.style.fontSize= 20+"px";
-                    }
-
-                    var span = document.getElementsByClassName("close2")[0];     
-
-                    span.onclick = function() { 
-                        modal.style.display = "none";
-                    }                        
-                    
-                </script>
+                </div>
 
                 <div class="introduce_text">
                     
@@ -197,30 +172,6 @@
                     
                 </div> 
 
-                <script>
-
-                    /*點擊進去後開啟新畫面*/
-
-                    var modal = document.getElementById("myModal1");
-                    
-                    var img = document.getElementById("head1");
-                    var modalImg = document.getElementById("head_1");
-                    var captionText = document.getElementById("caption1");
-
-                    img.onclick = function(){
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText.innerHTML= this.alt;
-                        captionText.style.fontSize= 20+"px";
-                    }
-
-                    var span = document.getElementsByClassName("close1")[0];     
-
-                    span.onclick = function() { 
-                        modal.style.display = "none";
-                    }                        
-                    
-                </script>
 
                 <div class="introduce_text">
                     
@@ -274,29 +225,6 @@
                     
                 </div> 
 
-                <script>
-
-                    /*點擊進去後開啟新畫面*/
-
-                    var modal = document.getElementById("myModal4");
-                    
-                    var img = document.getElementById("head4");
-                    var modalImg = document.getElementById("head_4");
-                    var captionText = document.getElementById("caption4");
-
-                    img.onclick = function(){
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText=this.alt;
-                    }
-
-                    var span = document.getElementsByClassName("close4")[0];     
-
-                    span.onclick = function() { 
-                        modal.style.display = "none";
-                    }                        
-                    
-                </script>
 
                 <div class="introduce_text">
                     
@@ -350,30 +278,6 @@
                     
                 </div> 
 
-                <script>
-
-                    /*點擊進去後開啟新畫面*/
-
-                    var modal = document.getElementById("myModal3");
-                    
-                    var img = document.getElementById("head3");
-                    var modalImg = document.getElementById("head_3");
-                    var captionText = document.getElementById("caption3");
-
-                    img.onclick = function(){
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                        captionText.innerHTML= this.alt;
-                        captionText.style.fontSize= 20+"px";
-                    }
-
-                    var span = document.getElementsByClassName("close3")[0];     
-
-                    span.onclick = function() { 
-                        modal.style.display = "none";
-                    }                        
-                    
-                </script>
 
                 <div class="introduce_text">
                     
@@ -432,28 +336,10 @@
     
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <script>
-        
-        var mybutton = document.getElementById("myBtn");
-        
-        
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        
-    </script>
+    <script src="../assets/js/buttontotop.js"></script>
 
+    <!--點擊畫面進入新畫面-->
+    <script src="../assets/js/imgclick.js"></script>
+      
 </body>
 </html>

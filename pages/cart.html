@@ -75,41 +75,11 @@
             
 
             <h1>數量：</h1>
-            <ul class="counter">
-                
-                <li id="minus"><input type="button" onclick="minuser()" value="-"/></li>
-                
-                <li id="countnum">0</li>
-                
-                <li id="plus"><input type="button" onclick="adder()" value="+"/></li>
-                
-                <div>
-                    <button type="button" class="delete" value="">刪除</button>
-                </div>
-            
-            </ul>
+
+            <input type="number" value="0">
 
         
         </div>
-
-        <script>
-
-            function adder(){
-                var count=document.getElementById("countnum").innerHTML;
-                count=parseInt(count)+1;
-                document.getElementById("countnum").innerHTML=count;
-            }
-            function minuser(){
-                var count=document.getElementById("countnum").innerHTML;
-                if(count<=0){
-                    count=0;
-                }else{
-                    count=parseInt(count)-1;
-                }	
-                document.getElementById("countnum").innerHTML=count;
-            }
-
-        </script>
     
     </div>
 
@@ -125,40 +95,10 @@
             
 
             <h1>數量：</h1>
-            <ul class="counter">
-                
-                <li id="minus2"><input type="button" onclick="minuser2()" value="-"/></li>
-                
-                <li id="countnum2">0</li>
-                
-                <li id="plus2"><input type="button" onclick="adder2()" value="+"/></li>
 
-                <div>
-                    <button type="button" class="delete" value="">刪除</button>
-                </div>
-
-            </ul>
+            <input type="number" value="0">
         
         </div>
-
-        <script>
-
-            function adder2(){
-                var count=document.getElementById("countnum2").innerHTML;
-                count=parseInt(count)+1;
-                document.getElementById("countnum2").innerHTML=count;
-            }
-            function minuser2(){
-                var count=document.getElementById("countnum2").innerHTML;
-                if(count<=0){
-                    count=0;
-                }else{
-                    count=parseInt(count)-1;
-                }	
-                document.getElementById("countnum2").innerHTML=count;
-            }
-
-        </script>
     
     </div>
 
@@ -204,28 +144,7 @@
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <script>
-        
-        var mybutton = document.getElementById("myBtn");
-        
-        
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        
-    </script>
+
 
     <div>
         
@@ -240,7 +159,8 @@
         </div>
     
     </div>
-
+    
+    <script src="../assets/js/buttontotop.js"></script>
 
 </body>
 </html>
