@@ -46,7 +46,8 @@ var captionText = document.getElementById("caption4");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText=this.alt;
+    captionText.innerHTML= this.alt;
+    captionText.style.fontSize= 20+"px";
 }
 
 var span = document.getElementsByClassName("close4")[0];     
