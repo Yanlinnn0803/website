@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人資料</title>
+    <title>會員中心</title>
     <style>
-        @import url(../assets/css/member.css);
+        @import url(../assets/css/memberedit.css);
         @import url(../assets/css/topbutton.css);
         @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
     </style>
@@ -71,28 +71,52 @@
     
         </div>
 
-<!--表單-->
-    <div class="memberintroduce">
-        <div class="title">
-            <h1>個人資料</h1>
-        </div>
-        <div class="member_introduce">
-            <img src="../assets/img/head-2.jpg" id="head2">
-            <div class="introduce_text">  
-                <span>
-                    姓名：無言0<br>
-                    帳號：GG3be0<br>
-                    性別：不願公開<br>
-                    生日：1987年 / 13月 / 32日<br>
-                    手機：0987-987-987<br>
-                    地址：火星國火星市火星路666號<br>
-                    郵件：kuasobi@email.com<br>
-                    消費紀錄：無<br>
-                    <div class="btn-group">
-                        <button class="btn"><a href="memberedit.html">修改資料</a></button>
-                    </div>
-                </span>
-            </div>
+<!--表單-->    
+    <div class="mform">
+        <div class="question">
+            <form class="form">
+                <h2>會員中心</h2>
+                <div class="group">
+                    <label for="user_name">姓名（暱稱）</label>
+                    <input type="text" name="" id="user_name" placeholder="請輸入姓名" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入姓名'">
+                </div>
+                <div class="group">
+                    <label for="user_id">帳號</label>
+                    <input type="text" name="" id="user_id" placeholder="請輸入帳號" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入帳號'">
+                </div>
+                <div class="group">
+                    <label for="user_password">密碼</label>
+                    <input type="password" name="" id="user_password" placeholder="請輸入密碼" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入密碼'">
+                </div>
+                <div class="group">
+                    <label for="user_textpassword">確認密碼</label>
+                    <input type="text" name="" id="user_textpassword" placeholder="請確認密碼" onfocus="this.placeholder=''" onblur="this.placeholder='請確認密碼'">
+                </div>
+                <div class="group">
+                    <label for="user_sex">性別</label>
+                    <input type="text" name="" id="user_sex" placeholder="請輸入生理性別" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入生理性別'">
+                </div>
+                <div class="group">
+                    <label for="user_birthday">生日（西元）</label>
+                    <input type="date" name="" id="user_birthday">
+                </div>
+                <div class="group">
+                    <label for="user_phone">手機</label>
+                    <input type="text" name="" id="user_phone" placeholder="格式請輸入09xx-xxx-xxx" onfocus="this.placeholder=''" onblur="this.placeholder='格式請輸入09xx-xxx-xxx'">
+                </div>
+                <div class="group">
+                    <label for="user_site">地址</label>
+                    <input type="text" name="" id="user_site" placeholder="請輸入居住地" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入居住地'">
+                </div>
+                <div class="group">
+                    <label for="user_mail">電子郵件</label>
+                    <input type="text" name="" id="user_mail" placeholder="abc@gmail.com" onfocus="this.placeholder=''" onblur="this.placeholder='abc@gmail.com'">
+                </div>
+                <div class="btn-group">
+                    <input type="submit" value="送出" class="btn" />
+                    <input type="reset" value="重設" class="btn" />
+                </div>
+            </form>
         </div>
     </div>
 

@@ -114,6 +114,16 @@ div.meau_right{
     padding-top: 50px;
 }
 
+.searchform{
+    padding: 0;
+    margin: 0;
+}
+
+.search-img{
+    width: 20px;
+    height: auto;
+}
+
 .search{
     border:0 none;
     border-radius: 5px;

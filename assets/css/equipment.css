@@ -125,6 +125,16 @@ div.meau_right{
 	bottom: 3px;
 }
 
+.searchform{
+    padding: 0;
+    margin: 0;
+}
+
+.search-img{
+    width: 20px;
+    height: auto;
+}
+
 a.meau_choice2{ 
     display: inline-block;
 
