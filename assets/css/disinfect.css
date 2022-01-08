@@ -286,3 +286,101 @@ div.copyright{
     justify-content: center;
     flex-direction: column;
 }
+
+/*評論區*/
+
+div.comment{
+    width: 100%;
+
+    /*板塊置中*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+div.comment_area{
+
+    width:50%;
+    height:300px;
+
+    background-color:bisque;
+
+    padding-bottom: 10px;
+
+    border-radius: 30px;
+
+        /*板塊置中*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+div.comment_text1{
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+img.img_profile{
+    width:30%;
+}
+
+div.comment_form{
+    width:20%;
+    height:300px;
+
+    background-color:bisque;
+
+    padding-left:20px;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+
+div.comment_form > p {
+    font-size:25px;
+}
+
+input.input_name{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input.btn_submit{
+    margin-top:10px;
+}
+
+.rating {
+    font-size: 0;
+    display: table;
+    margin-top:10px;
+}
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+.rating > label:before {
+    padding: 5px;
+    font-size: 30px;
+    line-height: 1em;
+    display: inline-block;
+    content: "★";
+}
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #FFD700;
+}
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+    opacity: 0.5;
+}
+
+.rating1 > li {
+    padding: 5px;
+    font-size: 30px;
+    line-height: 1em;
+    display: inline-block;
+    content: "★";
+    color: #FFD700;
+}
